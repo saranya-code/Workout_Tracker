@@ -15,9 +15,9 @@ The user should be able to:
 
   * Add new exercises to a new workout plan.
 
-  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+  * View the combined weight of multiple exercises from the past seven workouts on the stats page.
 
-  * View the total duration of each workout from the past seven workouts on the `stats` page.
+  * View the total duration of each workout from the past seven workouts on the stats page.
 
 ## Dependencies
 
@@ -37,7 +37,8 @@ The user should be able to:
 
 ## screenshot 
 
-![Webpage Screenshot](./assets/images/DemoURL.gif?raw=true) 
+![Webpage Screenshot](./images/screenshot1.png?raw=true) 
+![Webpage Screenshot](./images/screenshot2.png?raw=true) 
 
 
 # Resource links
@@ -48,4 +49,4 @@ Heroku Deployment URL : https://afternoon-gorge-85233.herokuapp.com/
 
 Demo :
     
-![Webpage Screenshot](./assets/images/DemoURL.gif?raw=true)
+![Webpage Screenshot](./images/workout-tracker.gif?raw=true)
