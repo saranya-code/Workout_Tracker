@@ -28,6 +28,7 @@ function tallyExercises(exercises) {
     } else if (curr.type === "cardio") {
       acc.totalDistance = (acc.totalDistance || 0) + curr.distance;
     }
+    acc.totalDuration = (acc.totalDuration || 0) + curr.duration;
     return acc;
   }, {});
   return tallied;
@@ -46,7 +47,6 @@ function formatDate(date) {
 
 function renderWorkoutSummary(summary) {
   const container = document.querySelector(".workout-stats");
-
   const workoutKeyMap = {
     date: "Date",
     totalDuration: "Total Workout Duration",
