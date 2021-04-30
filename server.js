@@ -47,15 +47,15 @@ app.get("/stats",(req,res) =>{
       });
   })
 
-  // app.get('/api/workouts/range', (req, res) => {
-  //   User.find({})
-  //     .then(exercise => {
-  //         res.json(exercise);
-  //     })
-  //     .catch(err => {
-  //       res.json(err);
-  //     });
-  // })
+  app.get('/api/workouts/range', (req, res) => {
+    User.find({})
+      .then(exercise => {
+          res.json(exercise);
+      })
+      .catch(err => {
+        res.json(err);
+      });
+  })
 
   app.post('/api/workouts', ({body}, res) => {
     User.create(body)
@@ -78,15 +78,6 @@ app.get("/stats",(req,res) =>{
       res.json(err);
     });
   })
-
-
-
-
-
-
-
-
-
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);

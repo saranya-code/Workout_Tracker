@@ -1,3 +1,14 @@
+fetch("api/workouts/range")
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    populateChart(data);
+  });
+
+
+API.getWorkoutsInRange()
+
 function generatePalette() {
   const arr = [
     '#003f5c',
@@ -22,7 +33,8 @@ function generatePalette() {
 }
 
 function populateChart(data) {
-  let durations = data.map(({ totalDuration }) => totalDuration);
+  console.log("---------------", data)
+  let durations = duration(data)
   let pounds = calculateTotalWeight(data);
   let workouts = workoutNames(data);
   const colors = generatePalette();
@@ -31,7 +43,6 @@ function populateChart(data) {
   let bar = document.querySelector('#canvas2').getContext('2d');
   let pie = document.querySelector('#canvas3').getContext('2d');
   let pie2 = document.querySelector('#canvas4').getContext('2d');
-
   const daysOfWeek = [
     'Sunday',
     'Monday',
@@ -172,7 +183,17 @@ function populateChart(data) {
     },
   });
 }
+function duration(data) {
+  let durations = [];
 
+  data.forEach(workout => {
+    workout.exercises.forEach(exercise => {
+      durations.push(exercise.duration);
+    });
+  });
+
+  return durations;
+}
 function calculateTotalWeight(data) {
   let totals = [];
 
