@@ -44,7 +44,7 @@ The user should be able to:
 
 Github repository URL : https://github.com/saranya-code/Workout_Tracker
 
-Deployment URL : 
+Heroku Deployment URL : https://afternoon-gorge-85233.herokuapp.com/
 
 Demo :
     
