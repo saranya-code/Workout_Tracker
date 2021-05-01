@@ -39,7 +39,8 @@ The user should be able to:
 
 ![Webpage Screenshot](./images/screenshot1.png?raw=true) 
 ![Webpage Screenshot](./images/screenshot2.png?raw=true) 
-
+![Webpage Screenshot](./images/workout_stats.png?raw=true) 
+![Webpage Screenshot](./images/workout_DB.png?raw=true) 
 
 # Resource links
 
